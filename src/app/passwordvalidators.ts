@@ -1,14 +1,14 @@
 import { AbstractControl } from "@angular/forms";
 
 export function PasswordValidator(control: AbstractControl){
-    const password = control.get('pass');
-    const cnfmpassword = control.get('cnfmpass');
-    console.log(password,cnfmpassword);
+    const password = control.get('password');
+    const confirmPassword = control.get('confirmPassword');
+    console.log(password,confirmPassword);
 
-    if(!password?.pristine && cnfmpassword?.pristine){
+    if(!password?.pristine && confirmPassword?.pristine){
         return null;
     }
-    return password && cnfmpassword && password.value !== cnfmpassword.value
+    return password && confirmPassword && password.value !== confirmPassword.value
     ? { doNotMatch: true}
     : null;
 

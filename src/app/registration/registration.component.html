@@ -80,11 +80,11 @@
       
       <div class="content">
         <label>First Name*</label>
-        <input type="text" class="form-control" formControlName="firstname">
+        <input type="text" class="form-control" formControlName="firstName">
         
       </div>
       <div
-          *ngIf="registrationForm.controls['firstname'].touched && registrationForm.controls['firstname'].hasError('required')">
+          *ngIf="registrationForm.controls['firstName'].touched && registrationForm.controls['firstName'].hasError('required')">
           <span class="is-invalid">FirstName is required</span>
         </div>
       <br>
@@ -93,11 +93,11 @@
       <div class="content">
         <label>Last Name*</label>
       
-        <input type="text" class="form-control" formControlName="lastname">
+        <input type="text" class="form-control" formControlName="lastName">
         
       </div>
       <div
-          *ngIf="registrationForm.controls['lastname'].touched && registrationForm.controls['lastname'].hasError('required')">
+          *ngIf="registrationForm.controls['lastName'].touched && registrationForm.controls['lastName'].hasError('required')">
           <span class="is-invalid">LastName is required</span>
         </div>
       <br>
@@ -119,11 +119,11 @@
 
       <div class="content">
         <label>Email id*</label>
-        <input type="text" class="form-control" formControlName="emailid">
+        <input type="text" class="form-control" formControlName="email">
 
       </div>
       <div
-          *ngIf="registrationForm.controls['emailid'].touched && registrationForm.controls['emailid'].hasError('required')">
+          *ngIf="registrationForm.controls['email'].touched && registrationForm.controls['email'].hasError('required')">
           <span class="is-invalid">Email id is required</span>
         </div>
       <br>
@@ -131,14 +131,14 @@
 
       <div class="content">
         <label>Password</label>
-        <input type="password" class="form-control" formControlName="pass">
+        <input type="password" class="form-control" formControlName="password">
         
       </div>
       <br>
 
       <div class="content">
         <label>Confirm Password</label>
-        <input type="password" class="form-control" formControlName="cnfmpass">
+        <input type="password" class="form-control" formControlName="confirmPassword">
        
           </div>
           <div *ngIf="registrationForm.errors">

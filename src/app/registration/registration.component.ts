@@ -15,10 +15,10 @@ export class RegistrationComponent implements OnInit {
   registrationForm: FormGroup;
   submitted:boolean=false;
   
-    constructor(private fb: FormBuilder,private registerservice:InsuranceService) { 
+    constructor(private router: Router, private fb: FormBuilder,private registerservice:InsuranceService) { 
       this.registrationForm = this.fb.group({
-        firstname: ['',Validators.required],
-        lastname: ['',Validators.required],
+        firstName: ['',Validators.required],
+        lastName: ['',Validators.required],
         phoneNumber:[
           '',
           [
@@ -27,9 +27,9 @@ export class RegistrationComponent implements OnInit {
             Validators.min(99999999999),        ]
           ],
          
-          emailid: ['',Validators.required],
-        pass:['',Validators.required],
-        cnfmpass:['',Validators.required]
+          email: ['',Validators.required],
+        password:['',Validators.required],
+        confirmPassword:['',Validators.required]
       },{validator: PasswordValidator})  
     }
    
@@ -41,6 +41,7 @@ export class RegistrationComponent implements OnInit {
       this.registerservice.register(this.registrationForm.value)
       .subscribe((res)=>{
         console.log(res);
+        this.router.navigateByUrl('/login');
       })
     }
     // OnSubmit() {
