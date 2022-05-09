@@ -1,0 +1,21 @@
+<div>
+    <div class="card">
+      <div *ngFor="let category of categories" class="example-card">
+        <mat-card>
+          <mat-card-header>
+            <a (click)="onNavigateTo(category.link)"> <mat-card-title>{{category.name}}</mat-card-title></a>
+           </mat-card-header>
+          <img
+            mat-card-image
+            src={{category.img}}
+           
+            />   
+            <section>
+              <div class="example-button-row">
+                <button mat-raised-button color="primary">Buy</button>
+              </div>
+            </section>
+        </mat-card>
+      </div>
+   </div>
+  </div>

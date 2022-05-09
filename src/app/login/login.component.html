@@ -1,0 +1,45 @@
+ <body>
+
+   <div class="img">
+     <img src="../../assets/policy.jpg">
+   </div>
+
+   <div class="center">
+     <form [formGroup]="registrationForm1">
+       <div class="form-group">
+         <div class="textfield">
+           <input type="text" class="form-control" formControlName="email" required>
+           <span></span>
+
+           <label class="naming"> Email </label>
+
+           
+         </div>
+         <div
+             *ngIf="registrationForm1.controls['email'].touched && registrationForm1.controls['email'].hasError('required') ">
+             <span class="is-invalid">Email is required</span>
+           </div>
+       </div>
+
+       <div class="textfield">
+         <input type="password" class="form-control" formControlName="password" required>
+         <label class="naming"> Password</label>
+
+       </div>
+       <div
+       *ngIf="registrationForm1.controls['password'].touched && registrationForm1.controls['password'].hasError('required') ">
+       <span class="is-invalid">password is required</span>
+     </div>
+
+       <div class="pass">Forgot Password?</div>
+
+       <input type="submit"  value="login" (click)="onnavigateLogin()">
+       <div class="signup">
+         Not a member?
+
+         <span (click)="navigatesignup()" style="color: blue">Register</span>
+       </div>
+     </form>
+   </div>
+
+ </body>
