@@ -1,0 +1,14 @@
+.img{
+    background-image: url(https://quotefancy.com/media/wallpaper/3840x2160/143097-George-Washington-Quote-Honesty-is-always-the-best-policy.jpg);
+    background-size: cover;
+    height: 550px;
+   
+}
+.button{
+    float:right;
+    margin-top: 3%;
+    
+}
+.right{
+    margin-top: 1%;
+}

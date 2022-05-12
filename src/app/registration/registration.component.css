@@ -109,10 +109,10 @@ transition: 5s;
 
 span{
   cursor: pointer;
-}
+} */
 
 
- */
+
 
 
 
@@ -147,10 +147,10 @@ span{
    height: 600px;
     width: 1370px;
     position: absolute;
-}
+} 
 
 
-button[type=submit] {
+ button[type=submit] {
   /* width: 30%;
   padding: 3px 3px;
   color: antiquewhite;

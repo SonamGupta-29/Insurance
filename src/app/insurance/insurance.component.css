@@ -6,15 +6,28 @@
 
 } */
 
-.card{
-    height: 600px;
-    width: 600px;
-    margin-left: 5%;
+
+*{
+    background-color: rgb(248, 222, 179);
     
 }
+
+.mat-card-image{
+    height: 400px;
+    width: 600px;
+    /* margin-left: %; */
+    /* margin-top: 5%; */
+}
+
 .example-card{
-    width: 270px;
-    margin: 20px;
+    width: 100%;
+    
+  }
+  .example-button-row{
+      margin-left: 10%;
   }
  
-  
+  .ims{
+      display: flex;
+      justify-content: center;
+  }

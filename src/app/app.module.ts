@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { InsuranceListComponent } from './insurance-list/insurance-list.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { BuyandviewComponent } from './buyandview/buyandview.component';
+import { CustomerpolicylistComponent } from './customerpolicylist/customerpolicylist.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { InsuranceListComponent } from './insurance-list/insurance-list.componen
     ContactUsComponent,
     InsuranceComponent,
     InsuranceListComponent,
+    BuyandviewComponent,
+    CustomerpolicylistComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,8 @@ import { InsuranceListComponent } from './insurance-list/insurance-list.componen
     HttpClientModule,
     ReactiveFormsModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

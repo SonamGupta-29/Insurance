@@ -24,31 +24,28 @@ export class LoginComponent implements OnInit {
     })
   }
   
-  ngOnInit(): void {
+ngOnInit(): void {
     
-  }
+}
 
-  onnavigateLogin(){
-    this.insuranceService.getLogin(this.registrationForm1.value)
-     .subscribe((resi)=>{
-       console.log(resi);
-       this.router.navigateByUrl('/insurance');
-     })
-   }
+onnavigateLogin(){
+  this.insuranceService.getLogin(this.registrationForm1.value)
+   .subscribe((resi)=>{
+     console.log(resi);
+     
+   })
+   this.router.navigate(['/buyandview']);
+ }
 
-  navigatesignup() {
-    this.router.navigateByUrl('/registration');
+navigatesignup() {
+  this.router.navigateByUrl('/registration');
 };
 
 }
 function ngOnInit() {
-  throw new Error('Function not implemented.');
+throw new Error('Function not implemented.');
 }
 
-
-// function onLogin() {
-//   throw new Error('Function not implemented.');
-// }
 
 
 

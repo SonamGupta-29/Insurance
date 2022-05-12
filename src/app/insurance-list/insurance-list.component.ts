@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-insurance-list',
@@ -6,10 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./insurance-list.component.css']
 })
 export class InsuranceListComponent implements OnInit {
-  @Input() selected_pastry:any;
-  constructor() { }
+  
+  constructor(private router:ActivatedRoute) { }
 
   ngOnInit(): void {
+   
   }
 
 }

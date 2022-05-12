@@ -1,0 +1,41 @@
+<!-- <ul>
+  <div *ngFor="let std of policy">
+    <li>{{std.name}}</li>
+  </div>
+</ul> -->
+<div >
+    <div class="card">
+      <div *ngFor="let std of customerpolicy" class="example-card">
+  
+        <mat-card-header>
+          <a (click)="onNavigateTo">
+            <mat-card-title>{{std.name}}</mat-card-title>
+          </a>
+        </mat-card-header>
+        <img mat-card-image [src] = "std.policyImage">
+        <section>
+          <mat-card-content>
+          
+            <p>
+              {{std.policiesId}}
+            </p>
+            <!-- <p>{{std.yearly}}</p>
+            <p>{{std.accommodation}}</p>
+            <p>{{std.healthCheckup}}</p>
+            <p>{{std.coverage}}</p>
+            <p>{{std.discountPremium}}</p>
+            <p>{{std.claim}}</p>
+            <p>{{std.coverage}}</p>
+            <p>{{std.amountCover}}</p> -->
+          </mat-card-content>
+  
+          <div class="example-button-row">
+            <button mat-raised-button color="primary">Cancel
+              
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
